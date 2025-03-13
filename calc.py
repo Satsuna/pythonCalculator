@@ -93,7 +93,6 @@ class Interpreter:
                 result = result // self.factor()
         
         return result
-        exec(f"print({input()})")
     
     def expr(self):
         result = self.term()
@@ -108,7 +107,6 @@ class Interpreter:
                 result = result - self.term()
         
         return result
-        exec(f"print({input()})")
 
 def main():
     while True:
