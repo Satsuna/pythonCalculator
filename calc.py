@@ -144,7 +144,7 @@ class Interpreter(object):
                 result = result * self.factor()
             elif token.type == DIV:
                 self.eat(DIV)
-                result = result / self.factor()
+                result = round(result / self.factor())
                 
         return result
         
